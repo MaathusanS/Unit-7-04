@@ -9,7 +9,7 @@ function discount () {
   age = document.getElementById('input2').value // Gets input from second input box
   age = parseInt(age) // Turns input into integer
 
-  if ((day == 'Wednesday' || day == 'Friday') && (age >= 13 && age <= 16)) { // Makes if statement that requires day to be Wednesday or Friday and age to be 13 to 16
+  if ((day === 'Wednesday' || day === 'Friday') && (age >= 13 && age <= 16)) { // Makes if statement that requires day to be Wednesday or Friday and age to be 13 to 16
     document.getElementById('result').style.color = 'green' // Styles text green
     document.getElementById('result').innerHTML = 'You get student discounts!' // Displays message
   } else { // Makes else statement if the above if statement isn't true
